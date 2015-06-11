@@ -1,0 +1,18 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+        
+        
+<div class="section">
+  <div class="container" >
+	
+    {{! The tag below includes the post loop - partials/loop.hbs }}
+    {{> "loop"}}
+	
+	<br>
+	
+	{{! Previous/next page links - displayed on every page }}
+	{{pagination}}
+  </div>
+	
+</div>

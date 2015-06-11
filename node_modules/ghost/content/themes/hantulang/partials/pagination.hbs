@@ -1,0 +1,13 @@
+
+	 <ul class="pagination">
+	  {{#if next}}
+	  	<li class="older"><a href="{{page_url next}}" class="faa-parent animated-hover"> selanjutnya <i class="fa fa-hand-o-right faa-horizontal"></i></a></li>
+	  {{else}}
+	    <li class="disabled older"><a href="javascript:void(0);" class="faa-parent animated-hover"> selanjutnya <i class=fa fa-hand-o-right faa-horizontal"></i></a></li>
+	  {{/if}}
+	  {{#if prev}}
+	  	<li><a href="{{page_url prev}}" class="faa-parent animated-hover"><i class="fa fa-hand-o-left faa-horizontal"></i> sebelumnya</a></li>
+	  {{else}}
+	  	<li class="disabled"><a href="javascript:void(0);" class="faa-parent animated-hover"><i class="fa fa-hand-o-left faa-horizontal" disabled></i> sebelumnya</a></li>
+	  {{/if}}
+	 </ul>

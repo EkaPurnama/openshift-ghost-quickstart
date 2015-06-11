@@ -1,0 +1,20 @@
+<nav class="navbar banner">
+  <div class="container">
+
+    <ul class="navbar-list">
+      <div class="container">
+      {{#foreach navigation}}
+          <li class="navbar-item" role="presentation">
+            <a class="navbar-link{{#if current}} active{{/if}}" href="{{url absolute="true"}}"><i class="fa fa-{{slug}}"></i> {{label}}</a>
+          </li>
+      {{/foreach}}
+          <li class="navbar-item" style="float: right;">
+          <form>
+          <input class="u-full-width" type="text" placeholder="&#xf002; Search">
+          </form>
+          </li>
+      </div>
+    </ul>
+
+  </div>
+</nav>

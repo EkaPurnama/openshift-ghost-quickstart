@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="HandheldFriendly" content="True" />
+    <link rel="shortcut icon" href="{{asset "favicon.png"}}">
+
+    {{! Page Meta }}
+    <title>{{meta_title}} | {{@blog.title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    {{! Styles'n'Scripts }}
+    <script src="{{asset "js/head.load.min.js"}}"></script>
+    <script type="text/javascript">
+        head.load('{{asset "css/normalize.css"}}','{{asset "css/skeleton.css"}}','{{asset "css/style.css"}}','{{asset "css/font-awesome.min.css"}}','{{asset "css/font-awesome-animation.css"}}');
+    </script>
+
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+</head>
+
+<body class="{{body_class}} "  id="scrollTop">
+    {{#if @blog.cover}}
+    <div id="header">
+        <img style="width:100%;" src="{{@blog.cover}}" width="700">
+    </div>
+    {{/if}}
+    <div class="section">
+        {{navigation}}
+        <div class="container" id="showHere">
+    	{{! Everything else gets inserted here }}
+    	{{{body}}}
+        </div>
+        <div class="container">
+    	{{> "footer"}}
+        </div>
+
+        {{! Ghost outputs important scripts and data with this tag }}
+        {{ghost_foot}}
+    </div>
+
+    {{! The main JavaScript files }}
+    <script type="text/javascript">
+        head.js('https://code.jquery.com/jquery-2.1.4.min.js','{{asset "js/init.js"}}');
+    </script>
+</body>
+</html>

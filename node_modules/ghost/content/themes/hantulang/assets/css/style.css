@@ -1,0 +1,277 @@
+@import url(http://fonts.googleapis.com/css?family=Coming+Soon);
+a{
+  text-decoration: none;
+}
+a:hover{
+  color:#212121;
+}
+p{
+  margin-bottom:2rem;
+}
+pre, dl, figure, table, form, h1, h2, h3, h4, h5, h6{
+  margin-bottom: .5rem;
+}
+ul, ol, li, blockquote{
+  margin-bottom: 0rem;
+}
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0rem;
+  margin-top: 2rem}
+.pagination > li{
+  padding-bottom: 6rem;
+  float: left;
+  list-style: none;
+  font-size:20px;
+}
+.pagination > li.older{
+  float: right;
+}
+.pagination > li.disabled{
+  display: none;
+}
+.pagination > li > a{
+  color: #FF777C;}
+body{
+  background: #EAECF7;
+  font-family: Arial, sans-serif;
+}
+.loose {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+/* gradients - second red border, first red border, top white space, blue lines */
+  background-image:  -webkit-linear-gradient(left, rgba(255,85,91, .2), rgba(255,85,91, .2)), -webkit-linear-gradient(left, rgba(255,85,91, .8), rgba(255,85,91, .8)), -webkit-linear-gradient(top, white 0px, white 69px, rgba(255,255,255,0) 70px), -webkit-repeating-linear-gradient(white 0px, white 18px, #A6FFED 19px, white 20px);
+  background-image:  -moz-linear-gradient(left, rgba(255,85,91, .2), rgba(255,85,91, .2)), -moz-linear-gradient(left, rgba(255,85,91, .8), rgba(255,85,91, .8)), -moz-linear-gradient(top, white 0px, white 69px, rgba(255,255,255,0) 70px), -moz-repeating-linear-gradient(white 0px, white 18px, #A6FFED 19px, white 20px);
+  background-image:  -ms-linear-gradient(left, rgba(255,85,91, .2), rgba(255,85,91, .2)), -ms-linear-gradient(left, rgba(255,85,91, .8), rgba(255,85,91, .8)), -ms-linear-gradient(top, white 0px, white 69px, rgba(255,255,255,0) 70px), -ms-repeating-linear-gradient(white 0px, white 18px, #A6FFED 19px, white 20px);
+  background-image:  -o-linear-gradient(left, rgba(255,85,91, .2), rgba(255,85,91, .2)), -o-linear-gradient(left, rgba(255,85,91, .8), rgba(255,85,91, .8)), -o-linear-gradient(top, white 0px, white 69px, rgba(255,255,255,0) 70px), -o-repeating-linear-gradient(white 0px, white 18px, #A6FFED 19px, white 20px);
+  background-image:  linear-gradient(left, rgba(255,85,91, .2), rgba(255,85,91, .2)), linear-gradient(left, rgba(255,85,91, .8), rgba(255,85,91, .8)), linear-gradient(top, white 0px, white 69px, rgba(255,255,255,0) 70px), repeating-linear-gradient(white 0px, white 18px, #A6FFED 19px, white 20px);
+  background-size: 1px, 1px, auto, auto 20px;
+  background-repeat: repeat-y, repeat-y, no-repeat, repeat;
+  background-position: 90% 0px, 10% 0px, 0px 0px, 0px 0px;
+  margin-top: 40px;
+}
+.paper {
+  margin: 0;
+  display: block;
+  line-height: 20px;
+  padding-top: 50px;
+  padding-left: 10.5%;
+  padding-right: 10.5%;
+  text-align: justify;
+  position: relative;
+  top: -14px;
+}
+.paper:first-line {
+  line-height: 33px;
+  vertical-align: baseline;
+}
+.paper:focus {
+    outline: none;
+}
+.paper > p > img{
+  background: white;
+  padding: 14px;
+  box-shadow: 0 2px 3px gray;
+  max-width: 95%;
+}
+.loose > .tape {
+  color: transparent;
+  height: 0;
+}
+.navbar {
+  display: none; }
+/* Larger than tablet */
+@media (min-width: 750px) {
+  /* Navbar */
+  .navbar{
+    display: block;
+    width: 100%;
+    height: 4rem;
+    background: #212121;
+    z-index: 99;
+    box-shadow: 0px 3px 3px #212121;}
+  .navbar > .container {
+    width: 100%; }
+  .navbar-list {
+    list-style: none;
+    margin-bottom: 0; }
+  .navbar-item {
+    position: relative;
+    float: left;
+    text-align: center;
+    margin-bottom: 0; }
+  .navbar-link {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: light;
+    letter-spacing: .2rem;
+    padding: 0 15px 0 15px;
+    text-decoration: none;
+    line-height: 4rem;
+    color: #fff; }
+  .navbar-link:hover{
+    background: #fefefe;
+    padding: 7px 15px;
+    border-radius: 5px;
+    color: #212121;
+  }
+  .navbar-item > form, .navbar-item > form > input{
+  	width: 160px;
+    float: right;
+    margin: auto;
+    padding: 6px 15px;}
+  .navbar-item > form > input, .navbar-item > form > input:focus, .navbar-item > form > input:active{
+    background: #EAECF7;
+    border: 0;
+    height: 28px;
+    color: #212121;
+    box-shadow: inset 0 0 3px gray;}
+  .navbar-item > form > input{
+    background: #EAECF7;
+    font-family: "FontAwesome";
+    -moz-transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+    -webkit-transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+    -moz-transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+    -o-transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out, left 0.5s ease-in-out;}
+  .navbar-item > form > input:focus{
+    width: 220px;}
+  .navbar-link.active {
+    font-weight: bold;
+    text-shadow: 0px 0px 1px; }
+  .has-docked-nav .navbar {
+    position: fixed;
+    top: 0;
+    left: 0; }
+  .has-docked-nav{
+    display: block; }
+}
+  /* Re-overiding the width 100% declaration to match size of % based container */
+  .tape > li{
+  position: relative;
+  top: -15px;
+  float: left;
+  width: inherit;
+  text-align: center;
+  background-color: #fff;
+  opacity: 0.8;
+  border-left: 1px dashed rgba(0, 0, 0, 0.1);
+  border-right: 1px dashed rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 1px 0px #cccccc;
+  -moz-box-shadow: 0px 0px 1px 0px #cccccc;
+  box-shadow: 0px 0px 1px 0px #cccccc;
+  -webkit-transform: rotate(-2deg) skew(0,0) translate(0%,-5px);
+  -moz-transform: rotate(-2deg) skew(0,0) translate(0%,-5px);
+  -o-transform: rotate(-2deg) skew(0,0) translate(0%,-5px);
+  transform: rotate(-2deg) skew(0,0) translate(0%,-5px);
+  margin-left: 10px;
+  z-index: 999;
+}
+ .tape > li > a {
+  padding: 0 10px;
+  height: 35px;
+ }
+div.loose > .left-shadow{
+  width: 140px;
+  height: 140px;
+  bottom:-17px; left:-12px;
+  position:relative;
+  z-index:-6;
+  display: inline-block;
+  -webkit-box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.4);
+  -moz-transform: scale(1) rotate(274deg) translate(20px, 25px) skew(9deg, 0deg);
+  -webkit-transform: scale(1) rotate(274deg) translate(20px, 25px) skew(9deg, 0deg);
+  -o-transform: scale(1) rotate(274deg) translate(20px, 25px) skew(9deg, 0deg);
+  -ms-transform: scale(1) rotate(274deg) translate(20px, 25px) skew(9deg, 0deg);
+  transform: scale(1) rotate(274deg) translate(20px, 25px) skew(9deg, 0deg);
+}
+div.loose > .right-shadow{
+  width: 140px;
+  height: 140px;
+  bottom:-25px; right:-6px;
+  float: right;
+  position:relative;
+  z-index:-6;
+  display: inline-block;
+  -webkit-box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.4);
+  -moz-transform: scale(1) rotate(184deg) translate(20px, 25px) skew(9deg, 0deg);
+  -webkit-transform: scale(1) rotate(184deg) translate(20px, 25px) skew(9deg, 0deg);
+  -o-transform: scale(1) rotate(184deg) translate(20px, 25px) skew(9deg, 0deg);
+  -ms-transform: scale(1) rotate(184deg) translate(20px, 25px) skew(9deg, 0deg);
+  transform: scale(1) rotate(184deg) translate(20px, 25px) skew(9deg, 0deg);
+}
+footer > .footer-copyright > .container > .loose > .paper, #tag-banner > .container > .loose {
+  box-shadow: 0px 10px 10px -10px black;
+}
+.page-footer{
+  padding-bottom: 20px;
+  text-align: center;
+}
+.tanggal > time{
+  position: relative;
+  top: 40px;
+  right: 100px;
+  float: right;
+  color: #FF777C;
+}
+.fa-beranda:before {
+  content: "\f015";
+}
+.fa-profil:before{
+  content: "\f007";
+}
+.fa-kategori:before{
+  content: "\f15e";
+}
+.fa-beranda:before, .fa-profil:before, .fa-kategori:before{
+  font-size: 20px;
+}
+.floated-icon{
+  float: right;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+.floated-icon > i{
+  font-size: 40px;
+}
+a:hover{
+  color: #FF777C;}
+#header{
+	line-height: 0;
+}
+.container.share-links > a{
+	margin-left: 5px;
+	margin-right: 20px;
+	color: #FF777C;
+}
+.tanggal, .share-links{
+  font-family: "Coming Soon", "Comic-Neue", Arial, sans-serif;}
+.container.share-links{
+	top:100px;}
+.pagination > li > a:hover, .share-links > a:hover{
+  color: #1EAEDB;}
+.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -ms-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
+}
+.nav-fixed{
+  padding-top: 64px;
+}
+.hide{
+  display: none;
+}
+.judul{
+  font-family: Arial;
+  padding-top: 1rem;
+  padding-bottom: 1rem}

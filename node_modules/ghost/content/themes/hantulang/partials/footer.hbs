@@ -1,0 +1,13 @@
+  <footer class="page-footer">
+    <div>
+      <a class="floated-icon hide" href="#scrollTop" onclick="event.preventDefault();$('html,body').animate({scrollTop:$(this.hash).offset().top}, 300);">
+        <i class="fa fa-hand-o-up faa-bounce animated"></i><br>
+        kembali ke atas
+      </a>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      	<a href="{{@blog.url}}">{{@blog.title}}</a> &copy; 2014 - {{date format="YYYY"}}
+      </div>
+    </div>
+  </footer>
