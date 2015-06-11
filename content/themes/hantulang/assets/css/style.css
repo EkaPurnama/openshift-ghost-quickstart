@@ -165,7 +165,7 @@ body{
   -o-transform: rotate(-2deg) skew(0,0) translate(0%,-5px);
   transform: rotate(-2deg) skew(0,0) translate(0%,-5px);
   margin-left: 10px;
-  z-index: 999;
+  z-index: 1;
 }
  .tape > li > a {
   padding: 0 10px;
